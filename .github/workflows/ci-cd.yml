@@ -38,7 +38,7 @@ jobs:
       matrix:
         python-version: [3.8]
         node-version: ['12.x']
-        appname: ['cicdgithubaws']
+        appname: ['aws-codedeploy']
         deploy-group: ['staging']
         s3-bucket: ['aws-codedeploy-deployments-ph']
         s3-filename: ['staging-aws-codedeploy-ph-${{ github.sha }}']
