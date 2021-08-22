@@ -26,8 +26,6 @@ jobs:
           node-version: ${{ matrix.node-version }}
 
       # Install project dependencies, test and build
-      - name: Voltar pasta
-        run: cd ..
       - name: Install dependencies
         run: npm install
       - name: Run build
