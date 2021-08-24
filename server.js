@@ -2,8 +2,8 @@ const express = require("express")
 
 const app = express()
 
-app.get("/", () => {
-	return "Agora vai"
+app.get("/", (req, res) => {
+	return res.json({"opa":"Agora vai"})
 })
 
 app.listen(3000, () => {
